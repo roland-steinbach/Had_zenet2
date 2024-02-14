@@ -1,0 +1,188 @@
+  .body-mapNew {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #757575; /* Set your desired background color */
+  }
+  .searchbox {
+      width: 50%;
+      height: 75px;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
+      z-index: 1;
+      border-radius: 50px;
+      border: 1px solid #000;
+      display: grid;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    
+    .locationbox {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      z-index: 1;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    
+    .roundbox {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: #fa0;
+    }
+    
+    .makethiscenter {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .btn {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .map-container {
+      border-radius: 15px; /* Set border-radius for rounded corners */
+      overflow: hidden; /* Ensure the map stays within the rounded container */
+      background-color: #757575; /* Set your desired background color */
+    }
+  
+    .fly-tipping-title {
+      margin-left: 10px;
+      color: white;
+    }
+
+    .mapContainerStyle1 { 
+       border-radius: 15px;
+       overflow: hidden;
+       background-color: #757575;
+       width: 100%;
+       /*width: calc(70% - 30px);*/
+       height: calc(100vh - 100px);
+       margin-left: auto;
+       margin-right: 20px;
+       box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+      
+       /* Responsive height using media queries within inline styles */
+       @media (min-width: 768px) {
+       height: 400px; /* Adjust height for medium-sized screens */
+       }
+       @media (min-width: 992px) {
+         height: 500px; /* Adjust height for larger screens */
+       }
+      }  
+  
+  
+    .sideContainerStyle1 {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #757575;
+        width: calc(30% - 30px);
+        height: 20%;
+        margin-left: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+      
+        @media (min-width: 768px) {
+          height: 400px;
+        }    
+        @media (min-width: 992px) {
+          height: 110px;
+        }
+      }
+
+    .sideContainerStyle2  {
+        display: flex;
+        position: absolute;
+        top: calc(82px + 20% + 20px);
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #757575;
+        width: calc(30% - 30px);
+        height: calc(100vh - (82px + 20% + 40px));
+        margin-left: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+        
+        @media (min-width: 768px) {
+          height: 200px;
+        }
+        @media (min-width: 992px) {
+          height: 350px;
+        }
+      }
+
+    .jump-to-local-button {
+        
+          position: absolute;
+          top: 10px;
+          right:224px;
+          cursor: pointer;
+          background-color: white;
+          padding: 10px;
+          border: 1 px #ccc;
+          border-radius: 1px;
+          transition: box-shadow 0.3s ease;
+          box-shadow: none;
+          color: #757575;   
+    }
+
+    .search-bar-div {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+        background-color: #757575;
+        padding: 0%;
+        border: 0px solid #ccc;
+        border-radius: 15px;
+      }
+
+    .search-input-box {
+      width: 94%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .toggle-flag-button {
+        position: absolute;
+        top: 10px;
+        right: 12%;
+        transform: translateX(50%); /* Adjust for centering */
+        cursor: pointer;
+        background-color: white;
+        padding: 1%;
+        border: 1px solid #ccc;
+        /*borderRadius: 5px; */
+        transition: box-shadow 0.3s ease;
+        box-shadow: none;
+        color: #757575;
+        }
+
+    .info-div {
+        background-color: #757575;
+        color: black;
+        padding: 80px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    .form-style-map {
+        margin:50px;  
+      }
+      
+
+
+
+
+

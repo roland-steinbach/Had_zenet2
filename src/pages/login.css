@@ -1,0 +1,100 @@
+.proba-div7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 150px;
+  }
+
+.proba-div7 h3 {
+  margin: 0; 
+}
+
+  .container7 {
+    margin-left:180px;
+    margin-top:50px;
+    position: relative;
+    width: 1000px;    
+    height: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 12);
+    border: 5px solid rgb(105, 98, 98);
+    background-color: #e2e8ef;
+    border-radius: 10px;
+  } 
+
+  .form-style7 {
+    margin:20px;  
+  }
+
+  .form-style7 input {
+    font-size: 15px; /* Increase the font size */
+    padding: 8px; /* Increase the padding */
+    margin-bottom: 10px; /* Add some margin between fields */    
+  }
+
+  .header7 {
+    text-align: center;
+  }
+
+  .button-div7 {
+    height: 100px;
+  }
+
+  .button-login7 {
+   
+    position: absolute;
+    bottom: 40px;
+    right: 450px;
+    appearance: button;
+    background-color: #c4c9d0;
+    border-radius: 8px;
+    border-style: solid;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #060505;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue",sans-serif;
+    font-size: 15px;
+    line-height: 1.15;
+    
+    padding: 8px 21px;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-back7 {
+   
+    position: absolute;
+    bottom: 40px;
+    right: 250px;
+    appearance: button;
+    background-color: #c4c9d0;
+    border-radius: 8px;
+    border-style: solid;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #060505;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue",sans-serif;
+    font-size: 15px;
+    line-height: 1.15;
+    
+    padding: 8px 21px;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }

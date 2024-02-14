@@ -1,0 +1,98 @@
+body-mapNew {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  background-color: #757575; /* Set your desired background color */
+}
+searchbox {
+    width: 50%;
+    height: 75px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    z-index: 1;
+    border-radius: 50px;
+    border: 1px solid #000;
+    display: grid;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .locationbox {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+  }
+  .form-control{
+    border-radius: 20px;
+  }
+  
+  .roundbox{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fa0;
+  }
+  
+  .makethiscenter {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .map-container {
+    border-radius: 15px; /* Set border-radius for rounded corners */
+    overflow: hidden; /* Ensure the map stays within the rounded container */
+    background-color: #757575; /* Set your desired background color */
+  }
+
+  .fly-tipping-title {
+    margin-left: 10px;
+    color: white;
+  }
+
+  .mapContainerStyle  {  
+    border-radius: '15px';
+    overflow: 'hidden';
+    background-color: '#757575';
+    width: 'calc(70% - 30px)';
+    height: 'calc(100vh - 100px)';
+    margin-left: auto;
+    margin-right: 20px;
+    box-shadow: '0px 0px 10px 0px rgba(0,0,0,1)';
+    /* Responsive height using media queries within inline styles*/
+    @media (min-width: 768px) {
+      height: 400px; /* Adjust height for medium-sized screens */
+    };
+    
+    @media (min-width: 992px) {
+      height: '500px', /* Adjust height for larger screens */
+    }
+  };
+
+  .sideContainerStyle1  {
+    display: 'flex';
+    position: 'absolute';
+    top: 82px;
+    border-radius: '15px';
+    overflow: 'hidden';
+    background-color: '#757575';
+    width: 'calc(30% - 30px)';
+    height: '20%';
+    margin-left: '20px';
+    box-shadow: '0px 0px 10px 0px rgba(0, 0, 0, 1)';
+    /*-text: '';*/
+    
+    @media (min-width: 768px) {
+      height: '400px',
+    }
+    @media (min-width: 992px) {
+      height: '500px',
+    }
+  };
