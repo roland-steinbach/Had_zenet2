@@ -1,9 +1,9 @@
 import React, { useState, useEffect, Fragment, useContext, useRef } from 'react';
-import { GoogleMap, useLoadScript, Marker, LoadScript,InfoWindow, Autocomplete } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, Marker, LoadScript, 
+  InfoWindow, Autocomplete } from '@react-google-maps/api';
 import { v4 as uuidv4 } from 'uuid';
 import mapStyles from './MapStyles.json';
-import './mapNew.css';
-import './mapStyle.css';
+import './mapNewxx.css';
 import  {db}  from "./firebase";
 import {
   collection,
@@ -13,10 +13,10 @@ import {
   deleteDoc,
   doc,
 } from "firebase/firestore";
-import { saveCoordinatesToFirebase} from "./Form";
-import Form from "./Form";
+//import { saveCoordinatesToFirebase} from "./Form";
+//import Form from "./Form";
 import {useNavigate} from 'react-router-dom';
-import PieChartComponent from './PieChartComponent';
+import PieChartComponent from './statistic/PieChartComponent';
 
 
 
@@ -46,8 +46,6 @@ const Map2 = ({ isLoaded }) => {
     const [newmail, setNewmail] = useState();
     const [newphone, setNewphone] = useState();
     const [newplace, setNewplace] = useState();
-
-    //const usersCollectionRef = collection(db,"Personal datas");
   
     const removeFields = (index) => {
       let data = [...formFields];
@@ -175,27 +173,7 @@ const Map2 = ({ isLoaded }) => {
         console.log(users);
       }
 
-      // --------------------      C O N T A I N E R   S T Y L E        -------------------------- //
-      const mapContainerStyle = {  
-        borderRadius: '15px',
-        overflow: 'hidden',
-        backgroundColor: '#757575',
-        width: 'calc(70% - 30px)',
-        height: 'calc(100vh - 100px)',
-        marginLeft: 'auto', // Align the map container to the right side
-        marginRight: '20px', // Add margin to the right for spacing
-        boxShadow: '0px 0px 10px 0px rgba(0,0,0,1)', // Add a shadow effect
-        height: '100%',
-        // Responsive height using media queries within inline styles
-        '@media (min-width: 768px)': {
-          height: '400px', // Adjust height for medium-sized screens
-        },
-        '@media (min-width: 992px)': {
-          height: '600px', // Adjust height for larger screens
-        },
-      };  
 
-// -------------------------------------------------------------- //
 
      const displayMarkers = () => {
         console.log('Displaying markers:', users); 
@@ -279,10 +257,50 @@ const Map2 = ({ isLoaded }) => {
     }
   };
 
+        // --------------------      C O N T A I N E R   S T Y L E        -------------------------- //
+        const mapContainerStyle = {  
+          borderRadius: '15px',
+          overflow: 'hidden',
+          backgroundColor: '#757575',
+         // width: 'calc(70% - 30px)',
+         // height: 'calc(100vh - 100px)',
+          marginLeft: 'auto', // Align the map container to the right side
+          marginRight: '20px', // Add margin to the right for spacing
+          boxShadow: '0px 0px 10px 0px rgba(0,0,0,1)', // Add a shadow effect
+          height: '100%',
+          // Responsive height using media queries within inline styles
+        };  
+  
+  // -------------------------------------------------------------- //
+
   return (
 
-    <div className="map-wrapper">
-      <div class = "mapContainerStyle1"> 
+    <div className="map-wrapperxx">
+
+<div className="boxSidexx">
+    <div className='sideContainerStyle1xx'> 
+      <p style={{flex: 1}}>fly-tipping</p>
+      <p style={{flex: 1}}><a href="https://en.wikipedia.org/wiki/Illegal_dumping" 
+      target="_blank" rel="noopener noreferrer" 
+      style={{ display: 'block', marginTop: '10px' }}>Wiki</a></p>
+    </div>
+
+    <div className='empty-divxx'> </div>
+
+    <div className='sideContainerStyle2xx'>
+        <div className="fly-tipping-titlexx"
+          style={{
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Add text shadow to the text
+           }} >
+          <h1 className='text'>Diagrams</h1>
+          <PieChartComponent/>
+        </div>
+    </div>
+  </div>
+
+
+
+      <div class = "mapContainerStylexx">    
       
         <GoogleMap googleMapsApiKey="AIzaSyCg6M1oqiTQY4urstBRFmGiLeS7_txevRw"
            mapContainerStyle={mapContainerStyle}
@@ -293,12 +311,12 @@ const Map2 = ({ isLoaded }) => {
            onClick={flag ? handleMapClick : null}
         >
 
-     <div className="search-bar-div">
+       <div className="search-bar-divxx">
   
        <Autocomplete googleMapsApiKey="AIzaSyCg6M1oqiTQY4urstBRFmGiLeS7_txevRw" 
               onLoad={handleAutocompleteLoad} onPlaceChanged={handlePlaceSelect}>
 
-         <input className='search-input-box'
+         <input className='search-input-boxxx'
              type="text"
              placeholder="Search..."
              onChange={(e) => setSearchTerm(e.target.value)}
@@ -307,7 +325,7 @@ const Map2 = ({ isLoaded }) => {
      </div>
 
       <div
-        className="toggle-flag-button"
+        className="toggle-flag-buttonxx"
         onMouseOver={(e) => e.target.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)'} // Add box shadow on hover
         onMouseOut={(e) => e.target.style.boxShadow = 'none'}// Remove box shadow on mouse out
         onClick={() => setFlag(true)}
@@ -332,7 +350,7 @@ const Map2 = ({ isLoaded }) => {
         /* Add more style options as needed */
       }}
     >
-      {/* Content of the InfoWindow */}
+    
     <div className='info-div'>
      
       <form   className='form-style'>
@@ -375,8 +393,8 @@ const Map2 = ({ isLoaded }) => {
           )
         })}  
       </form>
-      </div>
-    </InfoWindow>
+      </div>  
+    </InfoWindow> 
   )}
     { showButton && (
         <div
@@ -388,28 +406,13 @@ const Map2 = ({ isLoaded }) => {
           JUMP TO LOCAL
         </div>
       )}
-    {displayMarkers()}
-    {displayNewMarkers()}
+       {displayMarkers()}
+       {displayNewMarkers()}
     </GoogleMap>
-    </div>
-
-    <div className='sideContainerStyle1'> {/*style={sideContainerStyle1}>*/}
-      <p>fly-tipping</p><br></br>
-      <p><a href="https://en.wikipedia.org/wiki/Illegal_dumping" target="_blank" rel="noopener noreferrer" style={{ display: 'block', marginTop: '10px' }}>Wiki</a></p>
-    </div>
-
-    <div className='sideContainerStyle2'>
-        <div className="fly-tipping-title"
-          style={{
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Add text shadow to the text
-           }} >
-          <h1>Diagrams</h1>
-          <PieChartComponent/>
-        </div>
-    </div>
-
   </div>
-  );
+
+</div>
+  ); 
 };
 
 function MapNew1() {
@@ -426,29 +429,34 @@ function MapNew1() {
     
     // Poll the loading status every second (adjust the interval as needed)
     const intervalId = setInterval(checkLoadStatus, 1000);
-
+ 
     // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
   return (
-    <div className="App"
+
+    <div className="app"
     style={{
-        backgroundColor:'#757575',
+      borderRadius: "15px",
+     // backgroundColor:'#757575',
     }}
     >
-      <div className="fly-tipping-title"
+      <div className="fly-tipping-titlexx"
       style={{
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Add text shadow to the text
       }} >
-      <h1>📍 Fly-Tipping Here</h1>
+      <h1 className='text'>📍 Fly-Tipping Here</h1>
       </div>
       
       <LoadScript googleMapsApiKey="AIzaSyCg6M1oqiTQY4urstBRFmGiLeS7_txevRw" libraries={['places']}>
         <Map2 isLoaded={isLoaded} />
-      </LoadScript>
+      </LoadScript>  
+
     </div>
   );
+
+  
 }
 
 export default MapNew1;
