@@ -182,13 +182,12 @@
   .app {
 
     border-radius: 15px;
-    background-color: yellow;
     padding: 15px;
-   /* background-color:#757575; */
+    width: 88vw;
+    background-color:#757575; 
   }
 
   .map-wrapperxx {
-    background-color: red;
     display: flex;
     flex-direction: row; 
     padding: 5px;
