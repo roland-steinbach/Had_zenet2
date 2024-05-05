@@ -1,3 +1,340 @@
+  .body-mapNewxx {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #757575; /* Set your desired background color */
+  }
+    .appxx {
+    border-radius: 15px;
+    padding: 5px;
+    width: 96vw;
+    overflow-x: auto;
+    background-color:#757575; 
+  }
+  
+
+  .map-wrapperxx {
+    display: flex;
+    height: 90vh;
+    width: 88vw;
+    flex-direction: column;
+    background-color: #757575;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  }
+  
+  .searchbox {
+      width: 50%;
+      height: 75px; 
+     /background-color: #fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
+      z-index: 1;
+      border-radius: 50px;
+      border: 1px solid #000;
+      display: grid;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    
+    .locationbox {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      z-index: 1;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    
+    .roundbox {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: #fa0;
+    }
+    
+    .makethiscenter {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .btn {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .map-container {
+      wdth: 80vw;
+      border-radius: 15px; /* Set border-radius for rounded corners */
+      overflow: hidden; /* Ensure the map stays within the rounded container */
+      background-color: #757575; /* Set your desired background color */
+      
+    }
+  
+    .fly-tipping-titlexx {
+      margin-top: -20px;
+      margin-left: 10px;
+      color: white;
+      background-color: #757575;
+    }
+
+    .mapContainerStylexx { 
+      height: 100vw;
+      width: 90 wv;
+    /*  background-color: #757575;*/
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+        
+    .sideContainerStyle1xx,
+    .sideContainerStyle2xx {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #757575;
+        width: 90vw; /* Full width on small screens */
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+      }
+
+      .sideContainerStyle1xx {
+        display: flex;
+        height: 20%;
+        margin-top: 10px;
+      }
+      
+      .sideContainerStyle2xx {
+        height: 30vh; /* 30% of the viewport height */
+        margin-bottom: 15px;
+      }
+
+      .empty-divxx {
+        width: 90vw;
+        height: 10px;
+      }
+      
+      .sideContainerStyle2xx {
+        height: 30vh; /* 30% of the viewport height */
+      }
+
+    .jump-to-local-button {
+        
+          position: absolute;
+          top: 10px;
+          right:224px;
+          cursor: pointer;
+          background-color: white;
+          padding: 10px;
+          border: 1 px #ccc;
+          border-radius: 1px;
+          transition: box-shadow 0.3s ease;
+          box-shadow: none;
+          color: #757575;   
+    }
+
+    .search-bar-divxx {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+        background-color: #757575;
+        padding: 0%;
+        border: 0px solid #ccc;
+        border-radius: 15px;
+      }
+
+    .search-input-boxxx {
+      width: 54%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: red;
+    }
+
+    .toggle-flag-buttonxx {
+        position: absolute;
+        top: 0px;
+      /*  right: 12%;*/
+        transform: translateX(50%); /* Adjust for centering */
+        cursor: pointer;
+        background-color: white;
+        padding: 1%;
+        border: 1px solid #ccc;
+        /*borderRadius: 5px; */
+        transition: box-shadow 0.3s ease;
+        box-shadow: none;
+        color: #757575;
+        font-size: 10px;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+        right: 0px ;
+        }
+
+    .info-div {
+        background-color: #757575;
+        color: black;
+        padding: 80px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    .form-style-map {
+        margin:50px;  
+      }
+      
+    .text {
+      font-size: 20px;
+      padding: 10px;
+    }
+      
+      
+
+  /* Media queries for responsiveness
+      //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px; */
+
+@media (min-width: 700px) {
+  
+  .appxx {
+    border-radius: 15px;
+    padding: 5px;
+  
+    width: 98vw;
+    overflow-x: auto;
+    background-color:#757575; 
+  }
+    
+  .fly-tipping-titlexx {
+      margin-top: -20px;
+      margin-left: 10px;
+      color: white;
+      background-color: #757575;
+    }
+
+  .map-wrapperxx {
+    display: flex;
+    flex-direction: row; 
+    padding: 5px;
+    border-radius: 15px;
+    height: 33vw;
+    margin-right: 0vw;
+    width: 97vw;
+  /*  width: 100vw;*/
+  /*  max-width: 100%;*/
+    background-color: #757575;
+  
+   /* overflow-x: auto;*/
+  }
+  .mapContainerStylexx {
+    height: 32vw;
+    width: 80vw;
+  }
+
+  .search-bar-divxx {
+    position: absolute;
+    top: 0px;
+    left: 70%;
+    /*transform: translateX(-50%);*/
+    width: 20vw;
+    height: 2px;
+    padding: 0%;
+    background-color: yellow;
+  }
+
+.search-input-boxxx {
+  width: 20vw;
+  height: 2px;
+  font-size: 2px;
+  top: 0px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: green;
+  
+}
+
+.toggle-flag-buttonxx {
+  font-size: 10px;
+  width: 25vw;
+  height: 2vw;
+  position: absolute;
+  top: 0px;
+  
+  transform: translateX(50%); /* Adjust for centering */
+}3
+
+
+  .boxSidexx {
+    width: 35%;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .sideContainerStyle1xx {
+    width: 98%;
+    height: 6vw;
+    display: flex;
+  }
+
+  .empty-divxx {
+    width: 30%;
+    height: 3vh;
+  }
+
+  .sideContainerStyle2xx {
+    width: 98%;
+    height: 25vw;
+    display: flex;
+  }
+
+  .text {
+    font-size: 20px;
+    padding:6px;
+  }
+
+  
+}
+
+@media (min-width: 1000px) {
+  .map-wrapperxx {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;  
+    padding: 20px;
+    border-radius: 15px;
+    height: 82vh;
+    width: 215vh;
+  }
+
+  .boxSidexx {
+    width: 60vh;
+  }
+
+  .mapContainerStylexx {
+    height: 85vh;
+    width: 150vh;  
+  }
+
+  .sideContainerStyle1xx {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .sideContainerStyle2xx {
+    height: 55vh;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+}
+
 
 
 
