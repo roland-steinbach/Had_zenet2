@@ -10,13 +10,13 @@ import "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD6HMZvHsyNOpCBPJDebTY0KmiVht3HSA8",
-  authDomain: "flytippinghere.firebaseapp.com",
-  databaseURL: "https://flytippinghere-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "flytippinghere",
-  storageBucket: "flytippinghere.appspot.com",
-  messagingSenderId: "838310825301",
-  appId: "1:838310825301:web:85061365423a02ebcb33dc"
+  apiKey: "AIzaSyDXhglM9ixWLwgGaxFKfboEAo4hErgt-rI",
+  authDomain: "haduzenet-1aa66.firebaseapp.com",
+  projectId: "haduzenet-1aa66",
+  storageBucket: "haduzenet-1aa66.appspot.com",
+  messagingSenderId: "509761022975",
+  appId: "1:509761022975:web:8b14cf50d834c2d59895ca",
+  measurementId: "G-EKLYD2FF7M"
 };
 
 // Initialize Firebase
